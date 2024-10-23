@@ -50,18 +50,22 @@ def convert_temperature(temperature, unit):
     else:
         return "Invalid unit"
 
+
 # Define new functions  to replace internals
 def fahrenheit_to_celsius(temperature):
     celsius = (temperature - 32) * (5 / 9)
     return celsius
 
+
 def celsius_to_kelvin(temperature):
     kelvin = temperature + 273.15
     return kelvin
 
+
 def celsius_to_fahrenheit(temperature):
     fahrenheit = (temperature * (9 / 5)) + 32
     return fahrenheit
+
 
 def kelvin_to_celsius(temperature):
     celsius = temperature - 273.15
@@ -96,7 +100,7 @@ def convert_temperature_modular(temperature, unit):
 
 
 # Reported the same
-convert_temperature(temperature = 32, unit = "F")
+convert_temperature(temperature=32, unit="F")
 convert_temperature_modular(temperature=32, unit="F")
 
 # Check invalid temperatures
