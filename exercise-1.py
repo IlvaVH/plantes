@@ -106,3 +106,7 @@ convert_temperature(temperature=-500, unit="F")
 convert_temperature_modular(temperature=-500, unit="F")
 convert_temperature(temperature=-1, unit="K")
 convert_temperature_modular(temperature=-1, unit="K")
+
+# Check invalid unit
+convert_temperature(temperature=30, unit="M")
+convert_temperature_modular(temperature=30, unit="M")
