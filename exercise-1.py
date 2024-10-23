@@ -1,3 +1,7 @@
+# Exercise: Refactor the code by extracting functions without altering its functionality.
+# - What functions did you create?
+# - What strategies did you use to identify them?
+
 # Original function
 def convert_temperature(temperature, unit):
     if unit == "F":
