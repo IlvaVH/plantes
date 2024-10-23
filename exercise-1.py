@@ -70,20 +70,20 @@ def kelvin_to_celsius(temperature):
 
 # Modular function
 def convert_temperature_modular(temperature, unit):
-    if unit == "F":
-        celsius = fahrenheit_to_celsius(temperature)
-        if celsius < -273.15:
-            return "Invalid temperature"
-        else:
-            kelvin = celsius_to_kelvin(celsius)
-            return celsius, kelvin
-    elif unit == "C":
+    if unit == "C":
         fahrenheit = celsius_to_fahrenheit(temperature)
         if fahrenheit < -459.67:
             return "Invalid temperature"
         else:
             kelvin = celsius_to_kelvin(temperature)
             return fahrenheit, kelvin
+    elif unit == "F":
+        celsius = fahrenheit_to_celsius(temperature)
+        if celsius < -273.15:
+            return "Invalid temperature"
+        else:
+            kelvin = celsius_to_kelvin(celsius)
+            return celsius, kelvin
     elif unit == "K":
         celsius = kelvin_to_celsius(temperature)
         if celsius < -273.15:
@@ -93,6 +93,7 @@ def convert_temperature_modular(temperature, unit):
             return celsius, fahrenheit
     else:
         return "Invalid unit"
+
 
 # Reported the same
 convert_temperature(temperature = 32, unit = "F")
